@@ -1,0 +1,28 @@
+<div class="row"style="border: 2px solid red;">
+  <div class="col-xs-12" >
+    <p>Add new Servers or blueprints!</p>
+    <label>Server Name</label>
+    <!-- server name tem uma referência para o elemento html como um todo -->
+    <!-- referências só podem ser usadas no template -->
+
+    <input type="text"
+    class="form-control"
+    #serverNameInput>
+
+    <label>Server Content</label>
+
+    <input
+    type="text"
+    class="form-control"
+    #serverContentInput
+    >
+
+    <br>
+    <button
+      class="btn btn-primary"
+      (click)="onAddServer(serverNameInput)">Add Server</button>
+    <button
+      class="btn btn-primary"
+      (click)="onAddBlueprint(serverNameInput)">Add Server Blueprint</button>
+  </div>
+</div>
